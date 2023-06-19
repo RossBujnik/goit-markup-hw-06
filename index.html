@@ -38,7 +38,7 @@
 							><span class="brand-name01">Web</span
 							><span class="brand-name02">Studio</span></a
 						>
-						<a class="menu underline" href="#">Agencja</a>
+						<a class="menu underline" href="index.html">Agencja</a>
 
 						<a class="menu" href="portfolio.html">Portfolio</a>
 
@@ -520,7 +520,7 @@
 						<form name="signup_form" autocomplete="on" novalidate>
 							<div class="newsletter-gap">
 								<div>
-									<label>
+									<label class="label-1">
 										<input
 											class="newsletter-input"
 											type="text"
@@ -549,6 +549,9 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- modal -->
+
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<div class="close-button-position">
@@ -562,8 +565,30 @@
 						<use href="./images/icons-vector.svg#icon-Vector-1" />
 					</svg>
 				</div>
+				<p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
+				<form>
+					<div class="modal-form-look">
+						<label class="label-2">
+							Imie
+							<input type="email" name="email" />
+						</label>
+						<label class="label-2">
+							Telefon
+							<input type="password" name="pwd" minlength="5" maxlength="12" />
+						</label>
+						<label class="label-2">
+							Email
+							<input type="tel" name="phone" />
+						</label>
+						<label>
+							Komentarz
+							<textarea name="feedback" rows="5"></textarea>
+						</label>
+					</div>
+				</form>
 			</div>
 		</div>
+
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

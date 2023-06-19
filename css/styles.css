@@ -462,7 +462,7 @@ h3 {
 	flex-direction: row;
 	gap: 12px;
 }
-label {
+.label-1 {
 	display: flex;
 	align-items: center;
 	background-color: #2f303a;
@@ -596,7 +596,41 @@ label {
 .close-button {
 	margin: 6px;
 }
-
+.modal-title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #212121;
+	padding-top: 40px;
+}
+.modal-form-look {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+	gap: 28px;
+}
+.label-2 {
+	width: 448px;
+	height: 40px;
+	left: 576px;
+	top: 314px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+.texarea-label-2 {
+	width: 448px;
+	height: 120px;
+	left: 576px;
+	top: 518px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
 /* portfolio.html */
 img {
 	display: block;
