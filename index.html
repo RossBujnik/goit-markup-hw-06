@@ -565,45 +565,75 @@
 						<use href="./images/icons-vector.svg#icon-Vector-1" />
 					</svg>
 				</div>
-				<p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
-				<form>
-					<div class="modal-form-look">
-						<p class="modal-title-look">Imie</p>
-						<label class="label-2">
-							<input type="name" name="name" />
-						</label>
-						<p class="modal-title-look">Telefon</p>
-						<label class="label-2">
-							<input type="phone" name="phone" minlength="5" maxlength="12" />
-						</label>
-						<p class="modal-title-look">Email</p>
-						<label class="label-2">
-							<input type="email" name="name" />
-						</label>
-						<label>
-							<p class="modal-title-look">Komentarz</p>
-							<textarea
-								class="textarea-label-2"
-								name="feedback"
-								placeholder="Wprowadź tekst"
-							></textarea>
-							<fieldset class="form-group">
-								<div class="form-field">
-									<input
-										type="checkbox"
-										name="language"
-										value="python"
-										id="python"
-									/>
-									<label class="form-label" for="agree"
-										>Oświadczam, że akceptuję
-										<a class="modal-links" href="#">Regulamin</a> i Politykę
-										prywatności</label
-									>
-								</div>
-							</fieldset>
-						</label>
-					</div>
+				<form class="modal-form-look">
+					<p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
+
+					<label class="label-title"
+						>Imie
+						<div class="input-style">
+							<input class="input-label" type="text" name="name" required />
+							<svg
+								class="modal-icons-position"
+								xmlns="http://www.w3.org/2000/svg"
+								width="18px"
+								height="18px"
+							>
+								<use href="./images/icons-forms.svg#icon-person-black-18dp-1" />
+							</svg>
+						</div>
+					</label>
+						<label class="label-title"
+						>Telefon
+						<div class="input-style">
+							<input class="input-label" type="text" name="phone" required />
+							<svg
+								class="modal-icons-position"
+								xmlns="http://www.w3.org/2000/svg"
+								width="18px"
+								height="18px"
+							>
+								<use href="./images/icons-forms.svg#icon-phone-black-18dp-1" />
+							</svg>
+						</div>
+					</label>
+					<label class="label-title"
+						>Email
+						<div class="input-style">
+							<input class="input-label" type="text" name="mail" required />
+							<svg
+								class="modal-icons-position"
+								xmlns="http://www.w3.org/2000/svg"
+								width="18px"
+								height="18px"
+							>
+								<use href="./images/icons-forms.svg#icon-email-black-18dp-1" />
+							</svg>
+						</div>
+					</label>
+						<p class="label-title">Komentarz</p>
+						<textarea
+							class="textarea-label-2"
+							name="feedback"
+							placeholder="Wprowadź tekst"
+						></textarea>
+						<fieldset class="agree-look">
+							<div>
+								<input type="checkbox" name="check" value="check" />
+								<label class="form-label" for="agree"
+									>Oświadczam, że akceptuję
+									<a class="modal-links" href="#">Regulamin</a> i
+									<a class="modal-links" href="#"
+										>Politykę Prywatności</a
+									></label
+								>
+							</div>
+							<div class="modal-button-position">
+								<button class="modal-button" type="submit">
+									<div class="modal-button-text">Wyślij</div>
+								</button>
+							</div>
+						</fieldset>
+					</label>
 				</form>
 			</div>
 		</div>
