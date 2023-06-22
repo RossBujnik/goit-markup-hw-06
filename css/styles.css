@@ -610,20 +610,29 @@ h3 {
 .modal-form-look {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+
 	align-items: center;
 	padding-top: 30px;
-	gap: 28px;
 }
 .label-2 {
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+	margin-bottom: 10px;
 	width: 448px;
 	height: 40px;
 	left: 576px;
 	top: 314px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	padding-bottom: ;
 }
-.texarea-label-2 {
+.textarea-label-2 {
+	display: flex;
+	flex-direction: column;
+	resize: none;
 	width: 448px;
 	height: 120px;
 	left: 576px;
@@ -631,6 +640,18 @@ h3 {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 }
+.modal-title-look {
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+	text-align: left;
+	color: #757575;
+}
+.modal-links {
+}
+
 /* portfolio.html */
 img {
 	display: block;
