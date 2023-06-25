@@ -711,6 +711,21 @@ h3 {
 .agree-look {
 	padding-top: 20px;
 }
+.checkbox-look-vector {
+	cursor: pointer;
+}
+.checkbox-look-vector::before .checkbox-look-check::after {
+	visibility: visible;
+	transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-look-check {
+	cursor: pointer;
+}
+.checkbox-look-check::before .checkbox-look-vector::after {
+	visibility: hidden;
+	transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-label {
 	color: #757575;
 	font-size: 14px;
@@ -721,7 +736,6 @@ h3 {
 }
 .modal-title-look {
 	display: flex;
-
 	font-family: Roboto;
 	font-size: 12px;
 	font-weight: 400;
