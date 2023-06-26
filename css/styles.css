@@ -711,28 +711,53 @@ h3 {
 .agree-look {
 	padding-top: 20px;
 }
-.checkbox-look-vector {
-	cursor: pointer;
+.modal-label {
+	position: relative;
+	height: 24px;
+	margin: 20px 54px 30px 77px;
 }
-.checkbox-look-vector::before .checkbox-look-check::after {
-	visibility: visible;
-	transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-checkbox {
+	position: absolute;
+	top: 0;
+	left: -20px;
+	width: 16px;
+	height: 15px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
 }
-.checkbox-look-check {
-	cursor: pointer;
+.modal-checkbox-before {
+	width: 16px;
+	height: 15px;
+	border: 1px solid #212121;
+	border-radius: 2px;
+	position: absolute;
+	left: -20px;
+	top: 0px;
 }
-.checkbox-look-check::before .checkbox-look-vector::after {
+.modal-checkbox-after {
+	fill: #ffffff;
+	background-color: #2196f3;
+	width: 16px;
+	height: 15px;
+	border-radius: 4px;
+	position: absolute;
+	left: -20px;
+	top: 0;
+	bottom: 19px;
 	visibility: hidden;
-	transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox:checked + .modal-checkbox-before {
+	visibility: hidden;
+}
+.modal-checkbox:checked ~ .modal-checkbox-after {
+	visibility: visible;
 }
 
 .form-label {
-	color: #757575;
 	font-size: 14px;
-	font-family: Roboto;
-	line-height: 24px;
-	letter-spacing: 0.42px;
-	padding-top: 20px;
+	line-height: 1.71;
+	color: #757575;
 }
 .modal-title-look {
 	display: flex;
